@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tour Guider</title>
+<style>
+.wrapper{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-auto-rows:minmax(800px,auto);
+}
+.wrapper > div{
+	background-image:url("images//background.jpg");
+	background-size:cover;
+}
+.wrapper > div > .a {
+	display:grid;
+	grid-template-columns:1fr 4fr;
+	grid-auto-rows:minmax(60px,80px);
+	position:sticky;
+}
+.wrapper > div > .a > div {
+	background-color:rgba(0, 0, 0, 0.315);
+	position:sticky;
+}
+.wrapper > div > .a > div > em > h1{
+	font-family:'Snell Roundhand', cursive;
+	color:#ffffff;
+	margin-left:15px;
+}
+.wrapper > div > .a > div > ul{
+	display:flex;
+	float:right;
+	position:relative;
+	height:40px;
+	top:20px;
+}
+.wrapper > div > .a > div > ul > li {
+	line-height:30px;
+	list-style:none;
+	position:relative;
+}
+.wrapper > div > .a > div > ul > li > a{
+	color:#ffffff;
+	font-size:15px;
+	text-transform:uppercase;
+	padding:5px ;
+	text-decoration:none;
+}
+a.active,a:hover{
+	box-shadow:0px 0px 0px 2px #ffffff;
+	transition:.10s;
+}
+.wrapper > div > .b > h1{
+	color:#ffffff;
+	text-align:center;
+	font-family:Verdana;
+	margin-top:80px;
+	font-size:40px;
+	text-shadow:2px 1px #000;
+}
+.wrapper > div > .b > h5{
+	color:#ededed;
+	font-size:20px;
+	font-family:Courier New;
+	text-align:center;
+	text-shadow:3px 2px 0px #000;
+}
+.wrapper > div > .c{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+.wrapper > div > .d {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 3fr;
+	grid-auto-rows:minmax(60px,80px);
+	background-color:rgba(0, 0, 0, 0.600);
+}
+.main-one {
+	display:grid;
+	grid-template-columns:1fr;
+}
+.main-two{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-auto-rows:minmax(300px,auto);
+	grid-gap:1em;
+}
+.main-three{
+	display:grid;
+	grid-template-columns:1fr;
+}
+.main-four{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-auto-rows:minmax(400px,auto);
+}
+.main-four > div > .id{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr ;
+	grid-gap:1em;
+}
+.main-four > div > .id > div{
+	background-color:#000;
+}
+.all > .main-fi{
+	display:grid;
+	grid-template-columns:1fr;
+}
+.all > .main-five{
+	display:grid;
+	grid-template-columns:2fr 1fr 1fr 2fr;
+	grid-auto-rows:minmax(10px,20px);
+	grid-gap:10px;
+}
+.all > .main-six{
+	display:grid;
+	grid-template-columns:1fr;
+	
+}
+.footer{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-auto-rows:minmax(100px,100px);
+}
+.footer > .fi{
+	display:grid;
+	grid-template-columns:2fr 1fr 1fr 2fr;
+	grid-gap:5px;
+}
+.end{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-auto-rows:minmax(10px,40px);
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div>
+		<div class="a">
+			<div>
+				<em><h1>TourGuide</h1></em>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<a href="#" >Home</a>
+						<a href="#" >About us</a>
+						<a href="#" >Services</a>
+						<a href="#" >Gallery</a>
+						<a href="#" >post</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="b">
+				<h1>VISIT NEW PLACES</h1><br>
+				<h5>"A Good Traveler has no Fixed plans,And Is not Intent Of Arriving"<br>Leo Tzn</h5>
+		</div>
+		<div class="c">		
+			<div>
+				<form action="https://www.google.com/maps/place/Lahore">
+					<button style="height:50px; width:130px; background-color:#40730c;
+					color:#ffffff; margin-left:500px;">Show On The Map</button>
+				</form>
+			</div>
+			<div>
+				<form action="moreInfo.html">
+					<button style="height:50px; width:130px; background-color:rgba(0, 0, 0, 0.200); 
+					color:#ffffff;">More Info</button>
+				</form>
+			</div>
+		</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div class="d">
+			<div>
+				<h3 style="color:#ffffff; margin-left:30px;">Find Your Holidays</b></h3>
+			</div>
+			<div>
+				<h2 style="color:#ffffff; margin-left:80px;">Where</h2>
+			</div>
+			<div>		
+				<input type="text"  placeholder="Destination " 
+				style="width:200px; height:30px; margin-top:15px;">
+			</div>
+			<div>
+				<h2 style="color:#ffffff; margin-left:80px;">When</h2>
+			</div>
+			<div>		
+				<input type="text"  placeholder="Select Date" 
+				style="width:200px; height:30px; margin-top:15px;">
+			</div>
+			<div>
+				<button style="height:30px; width:100px; background-color:#40730c;
+				color:#ffffff; margin-left:10px; margin-top:17px;">Search</button>
+			</div>
+		</div>
+	</div>
+</div><br>
+<div class="main-one">
+	<div>
+		<h1 style="text-align:center;"><em>BEST PLACES TO VISIT</em></h1>
+	</div>
+</div>
+<div class="main-two" style="margin:60px;">
+	<div style="background-image:url(images\\mainx.jpg); background-size:cover;">
+		<div style="background-color:rgba(0, 0, 0, 0.600)">
+			<h1 style="color:#ffffff; margin-top:200px;">Amb Sharif Temple</h1>
+			<p style="color:#ffffff;"><b>Location:</b>Khushbab District,Punjab Pakistan</p>
+			<p style="color:#ffffff;"><b>Periods:</b>Hindu Shahi</p>
+			<p style="color:#ffffff;">PKR:200/-</p>
+			<form action="temple.html">
+				<button style="height:30px; width:100px; background-color:#40730c;
+				color:#ffffff; margin-left:300px; margin-top:10px; margin-bottom:10px;">Book Now</button>
+			</form>
+		</div>
+	</div>
+	<div style="background-image:url(images\\mainy.jpg); background-size:cover;">
+		<div style="background-color:rgba(0, 0, 0, 0.600)">
+			<h1 style="color:#ffffff; margin-top:200px;">Sonehri Mosque</h1>
+			<p style="color:#ffffff;"><b>Location:</b>Usman Centre sunehri Masjid,Dabbi Bazar,Lahore</p>
+			<p style="color:#ffffff;">PKR:200/-</p>
+			<form action="mosque.html">
+				<button style="height:30px; width:100px; background-color:#40730c;
+				color:#ffffff; margin-left:300px; margin-top:45px; margin-bottom:10px;">Book Now</button>
+			</form>
+		</div>
+	</div>
+	<div style="background-image:url(images\\mainz.jpg); background-size:cover;">
+		<div style="background-color:rgba(0, 0, 0, 0.600)">
+			<h1 style="color:#ffffff; margin-top:200px;">Salt Range Khewra</h1>
+			<p style="color:#ffffff;"><b>Location:</b>North Of Pind Dadan Khan,an administrative submission of 
+			Jhelum District,Punjab ,Pakistan</p>
+			<p style="color:#ffffff;">PKR:200/-</p>
+			<form action="SaltRange.html">
+				<button style="height:30px; width:100px; background-color:#40730c;
+				color:#ffffff; margin-left:300px; margin-top:25px; margin-bottom:10px;">Book Now</button>
+			</form>
+		</div>
+	</div>
+</div><br>
+<div class="main-three">
+	<h1 style="text-align:center;"><em>REVIEWS</em></h1>
+</div>
+<div class="main-four">
+	<div class="tem" style="display:grid;grid-template-columns:1fr;grid-auto-rows:minmax(400px,auto); background-image:url(images//template.png); background-size:cover;">
+		<div class="tem1" style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-auto-rows:minmax(10px,auto);grid-gap:1em;">
+			<div class="temp1">
+				<img src="images//girl1.jpg" style="height:150px; width:150px; border-radius:50%; margin-left:120px; margin-top:40px;"></img>
+				<div style="background-color:rgba(0, 0, 0, 0.600); width:300px; margin-left:30px; height:170px;">
+					<h1 style="color:#ffffff; font-size:20px; margin-left:80px; font-family:arial;">someone's name</h1>
+					<h3 style="color:#ffffff; font-size:15px; margin-left:40px; font-family:arial;">would you be willing to take five minutes 
+						to provide me with the review on tourGuider
+					</h3>
+					<img src="images//star.png" style="width:80px; height:20px;  margin-left:100px;">
+					</img>
+				</div>	
+			</div>
+			<div class="temp2">
+				<img src="images//man1.jpg" style="height:150px; width:150px; border-radius:50%; margin-left:120px; margin-top:40px;"></img>
+				<div style="background-color:rgba(0, 0, 0, 0.600); width:300px; margin-left:30px; height:170px;">
+					<h1 style="color:#ffffff; font-size:20px; margin-left:80px; font-family:arial;">someone's name</h1>
+					<h3 style="color:#ffffff; font-size:15px; margin-left:40px; font-family:arial;">would you be willing to take five minutes 
+						to provide me with the review on tourGuider
+					</h3>
+					<img src="images//star.png" style="width:80px; height:20px;  margin-left:100px;">
+					</img>
+				</div>	
+			</div>
+			<div class="temp3">
+				<img src="images//girl2.jpg" style="height:150px;width:150px;border-radius:50%;margin-left:120px;margin-top:40px;"></img>
+				<div style="background-color:rgba(0, 0, 0, 0.600); width:300px; margin-left:30px; height:170px;">
+					<h1 style="color:#ffffff; font-size:20px; margin-left:80px; font-family:arial;">someone's name</h1>
+					<h3 style="color:#ffffff; font-size:15px; margin-left:40px; font-family:arial;">would you be willing to take five minutes 
+						to provide me with the review on tourGuider
+					</h3>
+					<img src="images//star.png" style="width:80px; height:20px;  margin-left:100px;">
+					</img>
+				</div>	
+			</div>
+			</div>
+		</div>
+</div><br><br>
+<div class="all" style="background-color:#ededed;">
+	<div class="main-fi">
+		<h1 style="text-align:center; font-family:Times New Roman;">GET IN TOUCH</h1>
+	</div>
+	<div class="main-five">
+		<div></div>
+		<div>
+			<input type="text" placeholder="Full Name" style="width:300px; height:30px;">
+		</div>
+		<div>
+			<input type="text" placeholder="Email" style="width:300px; height:30px;">
+		</div>
+		<div></div>
+	</div><br><br>
+	<div class="main-six">
+		<div>
+			<input type="text" placeholder="message..." style="width:615px; height:200px; margin-left:355px;">
+		</div>
+	</div>
+	<div>
+		<button style="height:35px; width:100px; background-color:#40730c;
+		color:#ffffff; margin-left:600px; margin-top:10px; margin-bottom:10px;">Post Message</button>
+	</div>
+</div>
+<div class="footer" style="background-image:url(images\\footer.jpg);background-size:cover; background-repeat:no-repeat;">
+	<div>
+		<h1 style="text-align:center; color:#ffffff;font-family:'Snell Roundhand',cursive;">SignUp for 25% Discount</h1>
+	</div>
+	<div class="fi">
+		<div></div>
+		<div>
+			<form action="mail.html">
+				<button style="height:50px; width:130px; background-color:rgba(0, 0, 0, 0.500); 
+				color:#ffffff;">Enter Your Email</button>
+			</form>	
+		</div>
+		<div>
+			<form action="SignUp.html">
+				<button style="height:50px; width:130px; background-color:rgba(0, 0, 0, 0.500); 
+				color:#ffffff;">Sign Up</button>
+			</form>
+		</div>	
+		<div></div>
+	</div>
+</div>
+<div class="end" style="background-color:#000;">
+	<div>
+		<h3 style="color:#ffffff;">Number Word 800 59 86 95</h3>
+	</div>
+	<div></div>
+	<div></div>
+	<div>
+		<h3 style="color:#ffffff;">Follow Us On: Facebook Twitter Instagram</h3>
+	</div>
+</div>
+</body>
+</html>
